@@ -20,10 +20,10 @@
   </project> 
 
   <!-- switch to master later -->
-  <project name="gaia" path="gaia" remote="mozillaorg" revision="v2.0"/>
-  <project name="gecko" path="gecko" remote="mozillaorg" revision="v2.0"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="v2.0"/>
-  <project name="moztt" path="external/moztt" remote="b2g" revision="v2.0"/>
+  <project name="gaia" path="gaia" remote="mozillaorg" revision="v1.3"/>
+  <project name="gecko" path="gecko" remote="mozillaorg" revision="v1.3"/>
+  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="v1.3"/>
+  <project name="moztt" path="external/moztt" remote="b2g" revision="v1.3"/>
   <!-- keep them at master -->
   <project path="dalvik" name="fake-dalvik" remote="b2g" revision="master" />
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="master"/>
@@ -89,6 +89,7 @@
   <project path="external/webrtc" name="platform_external_webrtc"
            remote="b2g" revision="bcm2835-4.0.1_r1.1" />
   <project path="external/wpa_supplicant_6" name="wpa_supplicant_6" remote="aosp" revision="3d8fdea07212e99beb0ef9b1ef1e9e2c3d48482d" />
+  <!-- <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="armv6" revision="refs/tags/cm-11.0-20140215" /> -->
   <project path="external/hostap" name="platform/external/hostap" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="external/yaffs2" name="platform/external/yaffs2" />
@@ -120,11 +121,12 @@
   <project name"android_device_lge_p500_vendorsetup" path="device/lge/p500" revision="master" remote="wekncdr" />
 -->
 
-  <project name="android_device_lge_p500" path="device/lge/p500" revision="4cc3abce1b44880bab7bad426f0c5798e37ce9b0" remote="cm" />
-  <project name="android_kernel_lge_msm7x27-3.0.x" path="device/lge/p500-kernel" revision="ea01264b823a3310738b8ecb3496a96d3f602ec3" remote="armv6" />
+  <project name="android_device_lge_p500" path="device/lge/p500" revision="refs/heads/ics-plus-fxos" remote="wekncdr" />
+  <project name="android_kernel_lge_msm7x27-3.0.x" path="kernel/lge/msm7x27-3.0.x" revision="refs/heads/ics-plus" remote="armv6" />
 
-  <project name="android_vendor_lge" path="vendor/lge" revision="3f1764ed6528d1da3e899bb40c7ecb35ba82b7e5" upstream="refs/heads/cm-7.2" remote="armv6"/>
-  <project name="android_vendor_qcom_msm7x27" path="vendor/qcom/msm7x27" revision="34b8756bf9dbdcdfe71e7df4a5c34ebd659e101d" upstream="refs/heads/cm-11.0" remote="armv6"/>
+  <project name="android_vendor_lge" path="vendor/lge" revision="3f1764ed6528d1da3e899bb40c7ecb35ba82b7e5" remote="armv6"/>
+  <project name="android_vendor_qcom_msm7x27" path="vendor/qcom/msm7x27" revision="refs/heads/cm-12.0" remote="armv6"/>
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" revision="refs/heads/cm-10.2" remote="armv6" />
 
   <!-- already defined by device/lge/p500/{libaudio,libcamera,libril}
   <project path="hardware/ril" name="platform/hardware/ril" />
